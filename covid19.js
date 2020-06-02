@@ -55,7 +55,7 @@ function parseHtml(data) {
         createtable(cnames[i], tcases[i], dcases[i], rcases[i], acases[i]);
     }
     // console.log(cnames.length);
-    // console.log(tcases.length);
+    // console.log(tcases.length);d
     //console.table(covidtable);
 
     // console.log(cnames[10])
