@@ -58,7 +58,6 @@ function parseHtml(data) {
     // console.log(tcases.length);
     //console.table(covidtable);
 
-    // console.log(findc);
     // console.log(cnames[10])
 
     for (let i = 0; i < countries.length; i++) {
