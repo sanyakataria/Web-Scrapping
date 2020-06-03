@@ -41,7 +41,6 @@ let findc = process.argv[2];
         // }
 
         //2.
-
         let className = await page.evaluate(function (elem) {
             return elem.getAttribute("class");
         }, everythingArr[i]);
