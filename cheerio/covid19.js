@@ -41,11 +41,13 @@ function parseHtml(data) {
         }
     }
     console.log(countries.length);
+
     let cnames = [];
     let tcases = [];
     let acases = [];
     let rcases = [];
     let dcases = [];
+    
     for (let i = 0; i < countries.length; i++) {
         cnames.push($($(countries[i]).find("td")[1]).text());
         tcases.push($($(countries[i]).find("td")[2]).text());
@@ -54,11 +56,7 @@ function parseHtml(data) {
         acases.push($($(countries[i]).find("td")[8]).text());
         createtable(cnames[i], tcases[i], dcases[i], rcases[i], acases[i]);
     }
-    // console.log(cnames.length);
-    // console.log(tcases.length);d
-    //console.table(covidtable);
-
-    // console.log(cnames[10])
+    console.table(covidtable);
 
     for (let i = 0; i < countries.length; i++) {
         if (cnames[i] == findc) {
